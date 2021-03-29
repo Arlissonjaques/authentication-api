@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
   before_action :set_user, only: %i[show]
+  before_action :authenticate_user!
 
   def index
     render json: User.all
