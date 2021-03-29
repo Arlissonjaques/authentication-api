@@ -5,10 +5,12 @@ class UsersController < ApplicationController
 
   def index
     render json: User.all
+    authorize User
   end
 
   def show
     render json: @users
+    authorize @users
   end
 
   private
