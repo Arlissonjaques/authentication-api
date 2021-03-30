@@ -60,6 +60,9 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    acts_as_paranoid (0.7.1)
+      activerecord (>= 5.2, < 7.0)
+      activesupport (>= 5.2, < 7.0)
     ast (2.4.2)
     bcrypt (3.1.16)
     better_errors (2.9.1)
@@ -211,6 +214,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_paranoid
   better_errors
   bootsnap (>= 1.4.4)
   byebug

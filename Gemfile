@@ -18,11 +18,13 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
   gem 'rspec-rails'
-  # Simple one-liner tests for common Rails functionality. Read more: https://github.com/thoughtbot/shoulda-matchers
+  # Simple one-liner tests for common Rails functionality.
+  # Read more: https://github.com/thoughtbot/shoulda-matchers
   gem 'shoulda-matchers'
   # Better error page. Read more: https://github.com/BetterErrors/better_errors
   gem 'better_errors'
-  # A Ruby static code analyzer and formatter, based on the community Ruby style guide. Read more: https://github.com/rubocop/rubocop
+  # A Ruby static code analyzer and formatter, based on the community Ruby style guide.
+  # Read more: https://github.com/rubocop/rubocop
   gem 'rubocop', require: false
 end
 
@@ -37,3 +39,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise_token_auth'
 gem 'pundit'
+# ActiveRecord plugin allowing you to hide and restore records without actually deleting them.
+# Read more: https://github.com/ActsAsParanoid/acts_as_paranoid
+gem 'acts_as_paranoid'
