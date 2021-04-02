@@ -42,3 +42,9 @@ gem 'pundit'
 # ActiveRecord plugin allowing you to hide and restore records without actually deleting them.
 # Read more: https://github.com/ActsAsParanoid/acts_as_paranoid
 gem 'acts_as_paranoid'
+# A library for setting up Ruby objects as test data.
+# Read more: https://github.com/thoughtbot/factory_bot_rails
+gem 'factory_bot_rails'
+# A library for generating fake data such as names.
+# Read more: https://github.com/faker-ruby/faker
+gem 'faker'
