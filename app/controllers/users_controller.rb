@@ -4,13 +4,13 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    render json: User.all
     authorize User
+    render json: User.all
   end
 
   def show
-    render json: @users
     authorize @users
+    render json: @users
   end
 
   private
