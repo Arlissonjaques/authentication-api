@@ -48,3 +48,6 @@ gem 'factory_bot_rails'
 # A library for generating fake data such as names.
 # Read more: https://github.com/faker-ruby/faker
 gem 'faker'
+# customize json output
+# Read more: https://github.com/rails-api/active_model_serializers
+gem 'active_model_serializers'
