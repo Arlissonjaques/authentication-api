@@ -1,5 +1,4 @@
-# Seja Bem-vindo
-
+# Seja Bem-vindo(a):star2:
 
 ## :information_source: Sobre
 Projeto feito para aplicação da vaga de Desenvolvedor **Back-End** na **Ruptiva**.
@@ -10,6 +9,11 @@ Projeto feito para aplicação da vaga de Desenvolvedor **Back-End** na **Ruptiv
 * Rails 6.1.3.1
 * Postgresql 13.2
 
+### Cobertura
+![Screenshot from 2021-04-03 05-08-46](https://user-images.githubusercontent.com/66529242/113472676-28988e80-943b-11eb-8f43-bf8cad6f7173.png)<br><br>
+
+## Qualidade
+![Screenshot from 2021-04-03 05-07-25](https://user-images.githubusercontent.com/66529242/113472737-92b13380-943b-11eb-9ab2-67052da1cfdd.png)<br><br>
 
 ## :arrow_forward: Como rodar o projeto
 ```
@@ -23,12 +27,12 @@ Após estes comandos você possui um usuario **admin** padrão:
 email: maikel@ruptiva.com
 senha: ilikeruptiva
 ```
-## :guardsman: Politicas do sistema
+## :guardsman: Politicas do sistema:
 Atualmente existem dois tipos de usuarios no sistema: **user** e **admin**. O **user** pode ver apenas o seu registro e nada mais. O **admin** pode listar todos os usuarios, bem como ver o seu próprio registro.
 
 ## :page_with_curl: Como ultilizar:
 
-### Criando um novo usuario
+### Criando um novo usuario:
 Requisição
 ```
 POST localhost:3000/auth
@@ -90,7 +94,7 @@ Resposta
   }
 }
 ```
-### Alterando dados
+### Alterção dados:
 
 :exclamation: Para qualquer passo adiante você irá precisar de três dados importantes que são: **access-token**, **client**, **uid**. Esses dados te indentificão dentro da aplicação, você os recebe atrávez da resposta do cabeçalho da requisição. E devem ser enviando também no cabeçalho junto da requisição.
 
@@ -156,7 +160,7 @@ Resposta
   "message": "Your password has been successfully updated."
 }
 ```
-### Sair da sua conta:
+### Sair da conta:
 Requisição
 ```
 DELETE localhost:3000/auth/sign_out # Não requer parametros
@@ -167,7 +171,7 @@ Resposta
   "success": true
 }
 ```
-### Apagar uma conta
+### Apagar uma conta:
 Requisição
 ```
 DELETE localhost:3000/auth # Não requer parametros
@@ -179,7 +183,7 @@ Resposta
   "message": "Account with UID 'arlisson@jaques.com' has been destroyed."
 }
 ```
-### Acessando registro do usuario atual
+### Acessando registro do usuario atual:
 Requisição
 ```
   GET localhost:3000/users/:id_user # Não reuquer parametros
@@ -195,7 +199,7 @@ Resposta
 }
 ```
 
-### Usuario comun tentando obter registro de outro usuario
+### Usuario comun tentando obter registro de outro usuario:
 Requisição
 ```
 GET localhost:3000/users/:id_outro_user # Não reuquer parametros
@@ -209,7 +213,7 @@ Resposta
   }
 }
 ```
-### Usuario admin obtendo registro de usuario
+### Usuario admin obtendo registro de usuario:
 Requisição
 ```
 GET localhost:3000/users/4 # Não reuquer parametros
@@ -224,7 +228,8 @@ Resposta
   "role": "user"
 }
 ```
-### Usuario admin obtendo registro dos usuarios
+### Usuario admin obtendo registro dos usuarios:
+
 Requisição
 ```
 GET localhost:3000/users # Não reuquer parametros
