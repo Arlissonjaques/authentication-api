@@ -27,6 +27,12 @@ Após estes comandos você possui um usuario **admin** padrão:
 email: maikel@ruptiva.com
 senha: ilikeruptiva
 ```
+## :syringe: Testes
+```
+$ rspec                              # executa todos os testes
+$ bundle exec rspec spec/requests    # executa apenas os testes de request
+$ bundle exec rspec spec/models      # executa apenas os testes de model
+```
 ## :guardsman: Politicas do sistema:
 Atualmente existem dois tipos de usuarios no sistema: **user** e **admin**. O **user** pode ver apenas o seu registro e nada mais. O **admin** pode listar todos os usuarios, bem como ver o seu próprio registro.
 
@@ -94,7 +100,7 @@ Resposta
   }
 }
 ```
-### Alterção dados:
+### Alteração de dados:
 
 :exclamation: Para qualquer passo adiante você irá precisar de três dados importantes que são: **access-token**, **client**, **uid**. Esses dados te indentificão dentro da aplicação, você os recebe atrávez da resposta do cabeçalho da requisição. E devem ser enviando também no cabeçalho junto da requisição.
 
@@ -199,7 +205,7 @@ Resposta
 }
 ```
 
-### Usuario comun tentando obter registro de outro usuario:
+### Usuario comum tentando obter registro de outro usuario:
 Requisição
 ```
 GET localhost:3000/users/:id_outro_user # Não reuquer parametros
