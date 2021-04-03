@@ -26,6 +26,12 @@ group :development, :test do
   # A Ruby static code analyzer and formatter, based on the community Ruby style guide.
   # Read more: https://github.com/rubocop/rubocop
   gem 'rubocop', require: false
+  # Code coverage for Ruby with a powerful configuration library and automatic merging of
+  # coverage across test suites. Read more: https://github.com/simplecov-ruby/simplecov
+  gem 'simplecov', require: false
+  # A Ruby code quality reporter.
+  # Read more: https://github.com/whitesmith/rubycritic
+  gem 'rubycritic', require: false
 end
 
 group :development do
