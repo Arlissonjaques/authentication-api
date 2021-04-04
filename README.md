@@ -46,10 +46,11 @@ POST localhost:3000/auth
 Parâmetros(obrigatorios, exceto: **role**)
 ```
 {
-  "first_name": "Arlissn",
+  "first_name": "Arlisson",
   "last_name": "Jaques",
   "email": "arlisson@jaques.com",
   "password": "12345678",
+  "password_confirmation": "12345678"
   "role": "admin" # padrão é "user"
 }
 ```
