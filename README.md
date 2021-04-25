@@ -1,8 +1,5 @@
 # Seja Bem-vindo(a):star2:
 
-## :information_source: Sobre
-Projeto feito para aplicação da vaga de Desenvolvedor **Back-End** na **Ruptiva**.
-
 ## 🚀 Tecnologias
 
 * Ruby 2.6.6
